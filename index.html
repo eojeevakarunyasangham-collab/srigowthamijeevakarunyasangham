@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>శ్రీ గౌతమి జీవకారుణ్య సంఘం</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f9;}
+
+header{
+background:linear-gradient(90deg,#006400,#2e8b57);
+color:white;text-align:center;padding:20px;
+}
+
+nav{
+background:#004d00;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+height:500px;
+background:url('images/hero.jpg') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+position:relative;
+color:white;
+text-align:center;
+z-index:2;
+}
+
+.hero-content h1{font-size:40px;}
+.motto{
+font-size:28px;
+color:#ffd700;
+margin:20px 0;
+}
+
+.hero-btn{
+background:#2e8b57;
+padding:12px 25px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+}
+
+.section-title{
+text-align:center;
+color:#006400;
+margin:40px 0 20px;
+}
+
+.committee-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:20px;
+}
+
+.committee-card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.committee-card img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #2e8b57;
+margin-bottom:10px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.video-grid iframe{
+width:100%;
+height:250px;
+border-radius:10px;
+}
+
+.donate{
+background:#2e8b57;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+footer{
+background:#004d00;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>శ్రీ గౌతమి జీవకారుణ్య సంఘం</h1>
+<p>📞 0883 2471438 | 📱 9492315588</p>
+<p>📧 eojeevakarunyasangham@gmail.com</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#committee">Trust Board</a>
+<a href="#gallery">Gallery</a>
+<a href="#donate">Donate</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h1>శ్రీ గౌతమి జీవకారుణ్య సంఘం</h1>
+<p class="motto">మానవ సేవే మాధవ సేవ</p>
+<a href="#donate" class="hero-btn">విరాళం ఇవ్వండి</a>
+</div>
+</section>
+
+<h2 class="section-title" id="committee">ట్రస్ట్ బోర్డ్ డైరెక్టర్స్</h2>
+
+<div class="committee-grid">
+
+<!-- Add member1.jpg to member11.jpg -->
+<script>
+for(let i=1;i<=11;i++){
+document.write(`
+<div class="committee-card">
+<img src="images/member${i}.jpg">
+<p>Trust Board Director</p>
+</div>
+`);
+}
+</script>
+
+</div>
+
+<h2 class="section-title" id="gallery">ఫోటో గ్యాలరీ</h2>
+
+<div class="gallery-grid">
+<img src="images/gallery1.jpg">
+<img src="images/gallery2.jpg">
+<img src="images/gallery3.jpg">
+</div>
+
+<h2 class="section-title">వీడియో గ్యాలరీ</h2>
+
+<div class="video-grid">
+<iframe src="https://www.youtube.com/embed/VIDEO_ID1" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/VIDEO_ID2" allowfullscreen></iframe>
+</div>
+
+<section class="donate" id="donate">
+<h2>Scan & Pay</h2>
+<img src="images/upi-qr.jpg" width="250">
+<p>UPI ID: srigowthamijs@sbi</p>
+</section>
+
+<footer id="contact">
+<p>📍 Mangalavaripeta, Rajamahendravaram – 533101</p>
+<iframe width="100%" height="250"
+src="https://maps.google.com/maps?q=17.004012,81.766893&z=15&output=embed">
+</iframe>
+</footer>
+
+</body>
+</html>
